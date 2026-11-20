@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A piece of you ♡</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #fdf8f5;
+      color: #493d52;
+      font-family: 'Trebuchet MS', sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 85px 20px 45px;
+    }
+
+    .eyebrow {
+      color: #b18aaa;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 11px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(45px, 8vw, 85px);
+      font-weight: normal;
+      margin: 25px 0;
+      color: #5c486b;
+    }
+
+    header .subtitle {
+      color: #a18da8;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 15px 22px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid #eee2ec;
+      border-radius: 28px;
+      padding: 38px;
+      box-shadow: 0 15px 45px rgba(100, 70, 110, 0.07);
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      color: #a18da8;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 30px 0;
+    }
+
+    li {
+      background: #faf3fa;
+      border: 1px solid #f0e5f1;
+      padding: 20px;
+      margin: 16px 0;
+      border-radius: 18px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    li:hover {
+      transform: translateX(5px);
+      background: #f5eaf7;
+    }
+
+    li::before {
+      content: "♡   ";
+      color: #c38fbe;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 16px 30px;
+      border: none;
+      border-radius: 40px;
+      background: #dfc9e8;
+      color: #493d52;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: inherit;
+    }
+
+    button:hover {
+      background: #ceb1dc;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(130, 90, 150, 0.15);
+    }
+
+    .decoration {
+      text-align: center;
+      color: #c5a3c5;
+      font-size: 23px;
+      letter-spacing: 10px;
+      margin: 30px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      color: #a18da8;
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    .signature {
+      letter-spacing: 3px;
+      color: #8f729c;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding-top: 55px;
+      }
+
+      .card {
+        padding: 25px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <p class="eyebrow">✧ welcome to my little universe ✧</p>
+    <h1>A piece of you ♡</h1>
+    <p class="subtitle">A little corner of the internet</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Things you love ✿</h2>
+      <p class="intro">
+        Little hobbies, passions and things that make
+        your days a little more special.
+      </p>
+
+      <ul>
+        <li id="acti1">Singing</li>
+        <li id="acti2">Reading books</li>
+        <li id="acti3">Doing my homework</li>
+      </ul>
+
+      <button id="btChangerListe" type="button">
+        Edit your little list ✧
+      </button>
+    </section>
+
+    <div class="decoration">♡ ✿ ♡</div>
+  </main>
+
+  <footer>
+    <p>
+      Still growing, still changing, still becoming.<br>
+      Thanks for visiting my little world ♡
+    </p>
+
+    <p class="signature">Made by Fertse ✿</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
